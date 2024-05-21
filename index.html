@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Meine Website</title>
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"
+    ></script>
+  </head>
+
+  <!-- <body class="m-auto" style="max-width: 700px;"> -->
+  <body>
+    <!-- ======================================= -->
+    <!-- ===== Section 1: Navigationszeile ===== -->
+    <!-- ======================================= -->
+    <!-- Die Navigationszeile ist dafür da, dass man schnell zu bestimmten Sections auf unserer Website navigieren kann-->
+    <section class="section-style-1" id="navbar">
+      <div class="container-fluid">
+        <!-- Dein Code -->
+		
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <div class="container-fluid">
+		  
+			<a class="navbar-brand" href="#">NW</a>
+			
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#"> Home </a>
+				</li>
+			  
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#"> Features </a>
+				</li>
+			  
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#"> Bewertungen </a>
+				</li>
+			  
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#"> Preise </a>
+				</li>
+
+			  </ul>
+			  <form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			  </form>
+			</div>
+		  </div>
+		</nav>
+		
+
+		
+		
+      </div>
+    </section>
+
+    <!-- ================================ -->
+    <!-- ===== Section 2: Überblick ===== -->
+    <!-- ================================ -->
+    <!-- Hier wird der Nutzer auf unsere App aufmerksam gemacht -->
+	<section class="section-style-2" id="überblick">
+		<div class="container-fluid">
+			<!-- Wir wollen, dass der Text links und das Bild rechts angezeigt wird. Dafür verwenden wir die Bootstrap-Klasse "row" -->
+			<div class="row">
+				<div class="col-lg-6 überblick-links">
+					<!-- Hier spezifizieren wir den Titel und die Beschreibung unserer App -->
+					<h1 class="grosser-titel">Niklas</h1>
+					<h3 class="kleiner-titel">
+						Das ist meine Homepage
+					</h3>
+					<!-- Hier spezifizieren wir den Button, der den Nutzer zu unserer App weiterleitet -->
+					<a type="button" class="btn btn-dark btn-lg" href="hobbies.html">
+						Nachricht senden
+					</a>
+				</div>
+				<!-- Hier spezifizieren wir ein Bild welches zu unserer App passt -->
+				<div class="col-lg-6 überblick-rechts">
+					<img class="app-bild" src="images/rainbow.png" />
+				</div>
+			</div>
+	</section>
+
+    <!-- =============================== -->
+    <!-- ===== Section 3: Features ===== -->
+    <!-- =============================== -->
+    <!-- Hier werden die Features unserer App aufgelistet -->
+    <section class="section-style-1" id="features">
+      <div class="container-fluid text-center">
+        <div class="row">
+		
+			<div class="col-lg-4 feature-box">
+			<span class="mx-auto text-start fs-3">
+				<h3 class="kleiner-titel">Lieblingsessen</h3>
+				<p>🥞 Pfannkuchen</p>
+				<p>🍜 Nudeln mit Pesto</p>
+				<p>🍌 Bananne</p>
+			</span>
+			</div>
+			
+			<div class="col-lg-4 feature-box">
+			<span class="mx-auto text-start fs-3">
+				<h3 class="kleiner-titel">Lieblingsfilme</h3>
+				<p>👩‍💻 Matrix</p>
+				<p>👽 Alien</p>
+			</span>
+			</div>
+			
+			<div class="col-lg-4 feature-box">
+			<span class="mx-auto text-start fs-3">
+				<h3 class="kleiner-titel">Hobbies</h3>
+				<p>🏊 Schwimmen</p>
+				<p>🚶 Wandern</p>
+			</span>
+			</div>
+			
+		</div>
+      </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ===== Section 4: Nutzer-Bewertungen ===== -->
+    <!-- ========================================= -->
+    <!-- Hier werden die Nutzer-Bewertungen angezeigt -->
+    <section class="section-style-2" id="bewertungen">
+		<!-- In dieser Section werden die Nutzer-Bewertungen angezeigt. Dafür nutzen wir die Bootstrap-Klasse "carousel" -->
+		<div class="carousel slide text-center" id="bewertungen-carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				  <!-- Hier spezifizieren wir den Text, das Bild und den Namen des Nutzers -->
+				  <h2 class="bewertung-text fs-1">
+					😀
+				  </h2>
+				</div>
+				<div class="carousel-item">
+				  <!-- Hier spezifizieren wir den Text, das Bild und den Namen des Nutzers -->
+				  <h2 class="bewertung-text fs-1">
+					😁
+				  </h2>
+				</div>
+			</div>
+		
+			<!-- Hier spezifizieren wir die Pfeile, mit denen der Nutzer zwischen den einzelnen Bewertungen wechseln kann -->
+			<button
+			class="carousel-control-prev"
+			type="button"
+			data-bs-target="#bewertungen-carousel"
+			data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+			class="carousel-control-next"
+			type="button"
+			data-bs-target="#bewertungen-carousel"
+			data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== Section 5: Preise ===== -->
+    <!-- ============================= -->
+    <!-- Hier werden die verschiedenen Preispläne unserer App aufgelistet -->
+    <section class="section-style-1" id="preise">
+
+		<div class="row text-center py-5">
+		  <div class="col">
+		  </div>
+		  <div class="col">
+			<div class="card rounded-3">
+			  <div class="card-header">
+				<h2>Dafür kann ich mich begeistern</h2>
+			  </div>
+			  <div class="card-body">
+				<ul class="fs-4">
+					<li>Webentwicklung</li>
+					<li>3D-Kunst</li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col">
+		  </div>
+		</div>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- ===== Section 6: Footer ===== -->
+    <!-- ============================= -->
+    <!-- Hier werden die Social-Media-Icons und der Copyright-Text angezeigt -->
+    <section class="section-style-2" id="footer">
+      <div class="container-fluid text-center">
+        <i class="social-icon fab fa-facebook-f"></i>
+		<i class="social-icon fab fa-twitter"></i>
+		<i class="social-icon fab fa-instagram"></i>
+		<i class="social-icon fas fa-envelope"></i>
+		<p>© Copyright 2023 Starcode</p>
+      </div>
+    </section>
+	
+	
+    <!-- Bootstrap JS Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
